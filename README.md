@@ -1,6 +1,83 @@
 <header>
 
-<!--
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>A Jornada do Amor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #fff0f6; }
+    .section { padding: 40px 0; border-bottom: 1px solid #ccc; text-align: center; }
+    .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #ff5a5f; color: #fff; text-decoration: none; border-radius: 5px; }
+    video { max-width: 90%; height: auto; }
+    img.qr { width: 150px; height: 150px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Página Inicial: Vídeo de Introdução -->
+  <div id="inicio" class="section">
+    <h1>A Jornada do Amor</h1>
+    <video controls>
+      <source src="seu-video-intro.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <p>Olá, meu amor! Preparei uma aventura digital para você relembrar nossos momentos mais especiais.</p>
+    <!-- Aqui, em vez de um QR code físico, usamos um botão que leva à próxima seção -->
+    <a href="#primeira-pista" class="btn">Iniciar Aventura</a>
+  </div>
+
+  <!-- Primeira Pista: Texto e Instrução para a Playlist -->
+  <div id="primeira-pista" class="section">
+    <h2>Primeira Pista</h2>
+    <p>Lembra do nosso primeiro encontro? Reviva esse momento acessando nossa playlist exclusiva. Clique no botão abaixo para ouvir a faixa "Nosso Primeiro Olhar". Preste atenção no trecho entre 1:20 e 1:40 – lá, uma mensagem secreta aguarda.</p>
+    <!-- Exemplo de QR Code gerado: substitua pela imagem baixada -->
+    <a href="#playlist" class="btn">Ouvir Playlist</a>
+    <!-- Ou, se preferir exibir o QR code: -->
+    <!-- <img src="qr_primeira-pista.png" alt="QR Code Primeira Pista" class="qr"> -->
+  </div>
+
+  <!-- Página da Playlist -->
+  <div id="playlist" class="section">
+    <h2>Nossa Trilha do Amor</h2>
+    <!-- Incorpore o player do Spotify ou YouTube -->
+    <iframe src="https://open.spotify.com/embed/playlist/seu-playlist-id" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <p>Ouça a faixa "Nosso Primeiro Olhar" e atente-se ao trecho mencionado.</p>
+    <a href="#segunda-pista" class="btn">Próxima Pista</a>
+  </div>
+
+  <!-- Segunda Pista: Vídeo Curto -->
+  <div id="segunda-pista" class="section">
+    <h2>Segunda Pista</h2>
+    <video controls>
+      <source src="seu-video-pista.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <p>Lembra daquela viagem inesquecível? Clique no botão abaixo para ver uma foto especial e descobrir a próxima pista.</p>
+    <a href="#foto-interativa" class="btn">Ver Foto Especial</a>
+  </div>
+
+  <!-- Terceira Pista: Foto Interativa -->
+  <div id="foto-interativa" class="section">
+    <h2>Terceira Pista</h2>
+    <!-- Exiba a foto da memória com o QR code sobreposto (pode ser uma imagem editada) -->
+    <img src="foto-memoria.jpg" alt="Nossa Viagem" style="max-width:90%; height:auto;">
+    <p>Clique na imagem ou no QR code abaixo para revelar a última surpresa.</p>
+    <!-- Botão que simula o clique no QR code -->
+    <a href="#final" class="btn">Última Pista</a>
+  </div>
+
+  <!-- Página Final: Surpresa e Encontro Virtual -->
+  <div id="final" class="section">
+    <h2>Surpresa Final</h2>
+    <p>Parabéns, meu amor! Você completou a nossa Jornada do Amor. Cada pista foi um pedacinho do nosso passado e do quanto você é especial para mim.</p>
+    <p>Agora, prepare-se: vamos ter um encontro virtual surpresa! Clique no botão abaixo para ver os detalhes do nosso encontro.</p>
+    <a href="link-para-videochamada-ou-detalhes.html" class="btn">Ver Detalhes do Encontro</a>
+  </div>
+
+</body>
+</html>
+
   <<< Author notes: Course header >>>
   Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
   In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
